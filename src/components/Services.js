@@ -13,7 +13,7 @@ export default function Services() {
       <Col s={12} m={6}>
         <Card title="Julia Workshops" className="teal darken-4 white-text">
           <p>
-            Julia workshops are provided in a half-day or full-day format, covering everything from installation, Julia basics,
+            Julia workshops are provided in a half-day or full-day format, covering everything from installation and Julia basics to the state-of-the-art of machine learning in Julia.
           </p>
         </Card>
       </Col>
