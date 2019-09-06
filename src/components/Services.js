@@ -32,7 +32,7 @@ export default function Services() {
           </p>
           <br />
           <Row className="center">
-            <a className="btn btn-large" href="mailto:info@loonanalytics.com?Subject=Workshops">Contact us for pricing</a>
+            <a className="btn btn-large" href="mailto:info@loonanalytics.com?Subject=Workshops">What do you want to learn?</a>
           </Row>
         </Card>
       </Col>
