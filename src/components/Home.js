@@ -1,8 +1,8 @@
 import React from 'react'
-import { Row, Col } from 'react-materialize'
+import { Row, Col, Card, Container } from 'react-materialize'
 
 export default function Home() {
-  return (
+  return (<div>
     <Row className="center valign-wrapper" style={{height: 400}}>
       <Col s={1} />
       <Col s={10} m={5}>
@@ -14,5 +14,29 @@ export default function Home() {
 
       <Col s={1} />
     </Row>
-  )
+
+    <Row style={{display: "none"}}>
+      <h3 className="center">Testimonials</h3>
+      <Container>
+        <Col s={6} m={4}>
+          <Card className="black white-text">
+            Testimony 1
+          </Card>
+        </Col>
+
+        <Col s={6} m={4}>
+          <Card className="black white-text">
+            Testimony 2
+          </Card>
+        </Col>
+
+        <Col s={6} m={4}>
+          <Card className="black white-text">
+            Testimony 3
+          </Card>
+        </Col>
+      </Container>
+    </Row>
+
+  </div>)
 }
