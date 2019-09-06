@@ -9,13 +9,15 @@ export default function Services() {
           <p>We provide a variety of general consulting services: everything from code review to statistical analysis.</p>
         </Card>
       </Col>
+
       <Col s={12} m={6}>
         <Card title="Julia Workshops" className="teal darken-4 white-text">
           <p>
-            Julia workshops are provided in a half-day or full-day format, covering:
+            Julia workshops are provided in a half-day or full-day format, covering everything from installation, Julia basics,
           </p>
         </Card>
       </Col>
+
     </Row>
   </Container>
 }
