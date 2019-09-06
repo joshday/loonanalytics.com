@@ -8,6 +8,7 @@ import Products from './components/Products'
 import Services from './components/Services'
 import NotFound from './components/NotFound'
 import Team from './components/Team'
+import About from './components/About'
 
 
 class App extends Component {
@@ -22,6 +23,7 @@ class App extends Component {
               <Route path="/services" component={Services} />
               <Route path="/products" component={Products} />
               <Route path="/team" component={Team} />
+              <Route path="/about" component={About} />
               <Route path="*" component={NotFound} />
             </Switch>
             <MyFooter />
