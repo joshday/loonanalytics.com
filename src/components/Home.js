@@ -6,7 +6,7 @@ export default function Home() {
     <Row className="center valign-wrapper" style={{height: 400}}>
       <Col s={1} />
       <Col s={10} m={5}>
-        <h4>Consulting for high-performance numerical computing, data science, and machine learning</h4>
+        <h4>High-performance numerical computing, data science, and machine learning</h4>
       </Col>
       <Col s={10} m={5}>
         <img className="center" src="/img/loonsquarecircle.png" alt="logo" height="300" />
