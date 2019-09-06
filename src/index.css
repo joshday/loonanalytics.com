@@ -1,6 +1,7 @@
 html, body {
   height: 100%;
   font-family: 'Montserrat', sans-serif;
+  background-color: black;
 }
 
 .nav-logo {
@@ -12,4 +13,9 @@ html, body {
   width: 95%;
   margin: 0 auto;
   padding: 0
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
 }

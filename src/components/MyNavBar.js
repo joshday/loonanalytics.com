@@ -12,7 +12,7 @@ const MyNavBar = () => {
     <Navbar className="black z-depth-0" alignLinks="right" brand={logo}>
       <NavLink to='/services'>Services</NavLink>
       <NavLink to='/products'>Products</NavLink>
-      <a target="_blank" rel="noopener noreferrer" href="http://blog.loonanalytics.com">Blog</a>
+      <a target="_blank" rel="noopener noreferrer" href="https://blog.loonanalytics.com">Blog</a>
     </Navbar>
   )
 }
