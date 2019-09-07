@@ -44,7 +44,7 @@ export default function Products() {
           <p>On-line algorithms for statistics.</p>
           <br />
           <img src="https://user-images.githubusercontent.com/8075494/57313750-3d890d80-70be-11e9-99c9-b3fe0de6ea81.png"
-            alt="statsok-img" width="100%" style={{ borderRadius: 10 }} />
+            alt="statsok-img" className="white" width="100%" style={{ borderRadius: 10 }} />
         </Card>
       </Col>
     </Row>
