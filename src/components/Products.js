@@ -6,7 +6,7 @@ export default function Products() {
     <Row className="flex" style={{marginTop: 20}}>
 
       <Col s={12} m={6}>
-        <Card title="ML Monitor" className="center cyan darken-4 white-text">
+        <Card title="ML Monitor" className="center black white-text">
           <h4><a className="btn" target="_blank" rel="noopener noreferrer" href="http://signals.loonanalytics.com">Link</a></h4>
           <a href="https://www.producthunt.com/posts/loon-analytics?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-loon-analytics" rel="noopener noreferrer" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=163769&theme=light" alt="Loon Analytics - Easy long-term trend monitoring | Product Hunt Embed" style={{width: 250, height: 54}} /></a>
           <br /><br />
@@ -18,19 +18,19 @@ export default function Products() {
       </Col>
 
       <Col s={12} m={6}>
-        <Card title="One Click Tuner" className="center cyan darken-4 white-text">
+        <Card title="One Click Tuner" className="center black white-text">
           <h4><a className="btn" target="_blank" rel="noopener noreferrer" href="https://oneclicktuner.com">Link</a></h4>
           <a href="https://www.producthunt.com/posts/one-click-tuner?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-one-click-tuner" rel="noopener noreferrer"  target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=153658&theme=light" alt="One Click Tuner - A simple, innovative tuning solution for musicians | Product Hunt Embed" style={{width: 250, height: 54}}/></a>
           <br /><br />
           <p>Chromatic musical instrument tuner for iOS.</p>
           <br />
           <img src="https://oneclicktuner.com/img/tuner.gif" alt="tuner-gif"
-            style={{ height: 300, borderRadius: 10 }} />
+            style={{ height: 300, borderRadius: 10, borderColor: "white", borderWidth: "1px", borderStyle: "solid" }} />
         </Card>
       </Col>
 
       <Col s={12} m={6}>
-        <Card title="statsok.com" className="center cyan darken-4 white-text">
+        <Card title="statsok.com" className="center black white-text">
           <h4><a className="btn" target="_blank" rel="noopener noreferrer" href="https://statsok.com">Link</a></h4>
           <p>Modern interactive statistics courses.</p>
           <br />
@@ -39,7 +39,7 @@ export default function Products() {
       </Col>
 
       <Col s={12} m={6}>
-        <Card title="OnlineStats.jl" className="center cyan darken-4 white-text">
+        <Card title="OnlineStats.jl" className="center black white-text">
           <h4><a className="btn" target="_blank" rel="noopener noreferrer" href="https://github.com/joshday/OnlineStats.jl">Link</a></h4>
           <p>On-line algorithms for statistics.</p>
           <br />
