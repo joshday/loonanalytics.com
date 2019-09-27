@@ -3,16 +3,13 @@ import { Row, Col, Card, Container } from 'react-materialize'
 
 export default function Home() {
   return (<div>
-    <Row className="center valign-wrapper" style={{height: 400}}>
-      <Col s={1} />
-      <Col s={10} m={5}>
+    <Row className="center" style={{marginLeft: 50, marginRight: 50, minHeight: 300}}>
+      <Col s={12} m={6} className="valign-wrapper" style={{ minHeight: 300 }}>
         <h4>Solutions for analytics, optimization, data science, and machine learning</h4>
       </Col>
-      <Col s={10} m={5}>
-        <img className="center" src="/img/loonsquarecircle.png" alt="logo" height="250" />
+      <Col s={12} m={6} className="valign-wrapper" style={{ minHeight: 300 }}>
+        <img className="hero-logo" src="/img/loonsquarecircle.png" alt="logo"/>
       </Col>
-
-      <Col s={1} />
     </Row>
 
     <Row style={{display: "none"}}>

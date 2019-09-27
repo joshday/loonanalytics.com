@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom'
 
 const MyNavBar = () => {
   const logo = <NavLink to='/' className="brand-logo no-wrap">
-    <img src="/img/loonsquarecircle.png" alt="" className="teal lighten-3 btn-floating nav-logo" />
+    <img src="/img/loonsquarecircle.png" alt="" className="teal lighten-3 btn-floating nav-logo no-wrap" />
     Loon Analytics
   </NavLink>
 

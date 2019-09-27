@@ -9,6 +9,19 @@ html, body {
     padding: 0;
 }
 
+.hero-logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.no-wrap {
+    overflow: hidden;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+}
+
 .nav-wrapper {
   width: 95%;
   margin: 0 auto;
