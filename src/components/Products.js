@@ -8,7 +8,7 @@ export default function Products() {
       <Col s={12} m={6}>
         <Card title="ML Monitor" className="center black white-text">
           <h4><a className="btn" target="_blank" rel="noopener noreferrer" href="http://signals.loonanalytics.com">Link</a></h4>
-          <a href="https://www.producthunt.com/posts/loon-analytics?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-loon-analytics" rel="noopener noreferrer" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=163769&theme=light" alt="Loon Analytics - Easy long-term trend monitoring | Product Hunt Embed" style={{width: 250, height: 54}} /></a>
+          <a href="https://www.producthunt.com/posts/loon-analytics?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-loon-analytics" rel="noopener noreferrer" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=163769&theme=light" alt="Loon Analytics - Easy long-term trend monitoring | Product Hunt Embed" style={{ width: "100%", maxWidth: 200 }} /></a>
           <br /><br />
           <p>Monitoring API/Dashboard for machine learning models in production.</p>
           <br />
@@ -20,7 +20,7 @@ export default function Products() {
       <Col s={12} m={6}>
         <Card title="One Click Tuner" className="center black white-text">
           <h4><a className="btn" target="_blank" rel="noopener noreferrer" href="https://oneclicktuner.com">Link</a></h4>
-          <a href="https://www.producthunt.com/posts/one-click-tuner?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-one-click-tuner" rel="noopener noreferrer"  target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=153658&theme=light" alt="One Click Tuner - A simple, innovative tuning solution for musicians | Product Hunt Embed" style={{width: 250, height: 54}}/></a>
+          <a href="https://www.producthunt.com/posts/one-click-tuner?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-one-click-tuner" rel="noopener noreferrer" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=153658&theme=light" alt="One Click Tuner - A simple, innovative tuning solution for musicians | Product Hunt Embed" style={{ width: "100%", maxWidth: 200 }}/></a>
           <br /><br />
           <p>Chromatic musical instrument tuner for iOS.</p>
           <br />

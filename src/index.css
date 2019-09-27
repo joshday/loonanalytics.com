@@ -17,10 +17,17 @@ html, body {
 }
 
 .no-wrap {
-    overflow: hidden;
-    white-space:nowrap;
-    text-overflow:ellipsis;
+  overflow: hidden;
+  white-space:nowrap;
+  text-overflow:ellipsis;
 }
+
+
+.sidenav {
+  background-color: #00bcd4;
+  color: #FFF !important;
+}
+
 
 .nav-wrapper {
   width: 95%;
