@@ -12,24 +12,19 @@ export default function Home() {
       </Col>
     </Row>
 
-    <Row style={{display: "none"}}>
+    <Row>
       <h3 className="center">Testimonials</h3>
-      <Container>
-        <Col s={6} m={4}>
-          <Card className="black white-text">
-            Testimony 1
-          </Card>
-        </Col>
-
-        <Col s={6} m={4}>
-          <Card className="black white-text">
-            Testimony 2
-          </Card>
-        </Col>
-
-        <Col s={6} m={4}>
-          <Card className="black white-text">
-            Testimony 3
+      <Container className="center">
+        <Col s={6}>
+          <Card className="grey lighten-2 black-text">
+            <img src="https://user-images.githubusercontent.com/8075494/66781202-ab710680-eea0-11e9-910a-9e837f6e31d4.png" width="40%" alt="glc logo" className="grayscale center" style={{display: "block", marginBottom: 10, marginLeft: "auto", marginRight: "auto"}} />
+            <p>
+              Josh has been a savior on our project, not just his in depth understanding of very recent and pertinent issues related to Julia and JuliaDB, but his ability to clearly articulate modern data science approached to solving real business questions.  This combination of technical and communication is rare.  Lastly, his productivity is unmatched with respect to consultants we have used.
+            </p>
+            <br />
+            <p>
+              -Chuck Weise at <a target="_blank" rel="noopener noreferrer" href="http://www.glcs.io">GLC</a>
+            </p>
           </Card>
         </Col>
       </Container>

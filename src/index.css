@@ -22,6 +22,9 @@ html, body {
   text-overflow:ellipsis;
 }
 
+.grayscale {
+  filter: grayscale(100%) !important;
+}
 
 .sidenav {
   background-color: #00bcd4;
