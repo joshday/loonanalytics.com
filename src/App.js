@@ -15,17 +15,23 @@ class App extends Component {
   render() {
     return (
       <BrowserRouter onUpdate={() => window.scrollTo(0, 0)}>
-        <div className="App grey darken-4 blue-grey-text text-lighten-4">
+        <div className="App">
           <ScrollToTop>
-            <MyNavBar />
-            <Switch>
-              <Route exact path="/" component={Home} />
-              <Route path="/services" component={Services} />
-              <Route path="/products" component={Products} />
-              <Route path="/team" component={Team} />
-              <Route path="/about" component={About} />
-              <Route path="*" component={NotFound} />
-            </Switch>
+            <header>
+              <MyNavBar />
+            </header>
+
+            <main>
+              <Switch>
+                <Route exact path="/" component={Home} />
+                <Route path="/services" component={Services} />
+                <Route path="/products" component={Products} />
+                <Route path="/team" component={Team} />
+                <Route path="/about" component={About} />
+                <Route path="*" component={NotFound} />
+              </Switch>
+            </main>
+            
             <MyFooter />
           </ScrollToTop>
         </div>

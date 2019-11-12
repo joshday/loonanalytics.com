@@ -1,19 +1,28 @@
 html, body {
   height: 100%;
-  font-family: 'Montserrat', sans-serif;
-  background-color: black;
+  background-color: white;
 }
 
-.nav-logo {
-    margin-right: 10px;
-    padding: 0;
+.App {
+  display: flex !important;
+  min-height: 100vh !important;
+  flex-direction: column !important;
+}
+
+main {
+  flex: 1 0 auto !important;
+}
+
+blockquote {
+  border-left: 5px solid #80cbc4;
 }
 
 .hero-logo {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 70%;
+  max-height: 280 !important;
 }
 
 .no-wrap {
@@ -23,14 +32,13 @@ html, body {
 }
 
 .grayscale {
-  filter: grayscale(100%) !important;
+  filter: grayscale(100%) brightness(50%) !important;
 }
 
 .sidenav {
-  background-color: #00bcd4;
+  background-color: #80cbc4;
   color: #FFF !important;
 }
-
 
 .nav-wrapper {
   width: 95%;
@@ -43,11 +51,11 @@ html, body {
   flex-wrap: wrap;
 }
 
-.card {
+.rounded-corners {
   border-radius: 10px !important;
 }
 
-.btn {
-  border-radius: 5px !important;
-  color: black;
+.button, .btn, .btn-small, .btn-large, .btn-flat {
+  text-transform: none !important;
+  box-shadow: none !important;
 }

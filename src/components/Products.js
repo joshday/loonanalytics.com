@@ -1,52 +1,53 @@
 import React from 'react'
 import { Row, Col, Card, Container } from 'react-materialize'
 
+const Prod = props => {
+  return <Col s={12} m={6}>
+    <Card title={props.title} 
+        className="large center grey darken-4 white-text rounded-corners z-depth-0">
+      <h4><a className="btn blue" target="_blank" rel="noopener noreferrer" href={props.link}>Link</a></h4>
+      {props.productHunt && 
+        <a href={props.productHunt} rel="noopener noreferrer" target="_blank">
+          <img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=163769&theme=light" height="100%" width="100"
+          alt={`Product Hunt Link: ${props.title}`} style={{ height: "100%", width: 200}} />
+        </a>
+      }
+      <br /><br />
+      <p>{props.description}</p>
+      <br />
+      <img style={{ ...props.imgStyle, maxWidth: "100%", maxHeight: "100%" }} 
+        src={props.img} alt={`img: ${props.title}`}/>
+    </Card>
+  </Col>
+}
+
+//-----------------------------------------------------------------------------// Products
 export default function Products() {
   return <Container>
-    <Row className="flex" style={{marginTop: 20}}>
+    <Row className="" style={{marginTop: 20}}>
 
-      <Col s={12} m={6}>
-        <Card title="ML Monitor" className="center black white-text">
-          <h4><a className="btn" target="_blank" rel="noopener noreferrer" href="http://signals.loonanalytics.com">Link</a></h4>
-          <a href="https://www.producthunt.com/posts/loon-analytics?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-loon-analytics" rel="noopener noreferrer" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=163769&theme=light" alt="Loon Analytics - Easy long-term trend monitoring | Product Hunt Embed" style={{ width: "100%", maxWidth: 200 }} /></a>
-          <br /><br />
-          <p>Monitoring API/Dashboard for machine learning models in production.</p>
-          <br />
-          <img src="https://user-images.githubusercontent.com/8075494/62552461-b1f95700-b83b-11e9-9ff1-9dc2b8c587a8.png"
-            alt="signal-img" width="100%"/>
-        </Card>
-      </Col>
+      <Prod 
+        title="One Click Tuner"
+        link="https://oneclicktuner.com"
+        productHunt="https://www.producthunt.com/posts/one-click-tuner?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-one-click-tuner"
+        img="https://oneclicktuner.com/img/tuner.gif"
+        imgStyle={{borderRadius: 10, border: "1px solid white", height: 225 }}
+        description="Chromatic musical instrument tuner for iOS." />
 
-      <Col s={12} m={6}>
-        <Card title="One Click Tuner" className="center black white-text">
-          <h4><a className="btn" target="_blank" rel="noopener noreferrer" href="https://oneclicktuner.com">Link</a></h4>
-          <a href="https://www.producthunt.com/posts/one-click-tuner?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-one-click-tuner" rel="noopener noreferrer" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=153658&theme=light" alt="One Click Tuner - A simple, innovative tuning solution for musicians | Product Hunt Embed" style={{ width: "100%", maxWidth: 200 }}/></a>
-          <br /><br />
-          <p>Chromatic musical instrument tuner for iOS.</p>
-          <br />
-          <img src="https://oneclicktuner.com/img/tuner.gif" alt="tuner-gif"
-            style={{ height: 300, borderRadius: 10, borderColor: "white", borderWidth: "1px", borderStyle: "solid" }} />
-        </Card>
-      </Col>
+      <Prod 
+        title="StatsOK.com"
+        link="https://statsok.com"
+        description="Interactive modern statistics courses."
+        img="https://user-images.githubusercontent.com/8075494/64424484-388d9800-d077-11e9-8652-4ea94df820c9.png"
+        imgStyle={{borderRadius: 10}} />
 
-      <Col s={12} m={6}>
-        <Card title="statsok.com" className="center black white-text">
-          <h4><a className="btn" target="_blank" rel="noopener noreferrer" href="https://statsok.com">Link</a></h4>
-          <p>Modern interactive statistics courses.</p>
-          <br />
-          <img src="https://user-images.githubusercontent.com/8075494/64424484-388d9800-d077-11e9-8652-4ea94df820c9.png" alt="statsok-img" width="100%" style={{borderRadius: 10}}/>
-        </Card>
-      </Col>
+      <Prod 
+        title="OnlineStats.jl"
+        link="https://github.com/joshday/OnlineStats.jl"
+        img="https://user-images.githubusercontent.com/8075494/57313750-3d890d80-70be-11e9-99c9-b3fe0de6ea81.png"
+        imgStyle={{backgroundColor: "white", borderRadius: 10}}
+        description="On-line algorithms for statistics." />
 
-      <Col s={12} m={6}>
-        <Card title="OnlineStats.jl" className="center black white-text">
-          <h4><a className="btn" target="_blank" rel="noopener noreferrer" href="https://github.com/joshday/OnlineStats.jl">Link</a></h4>
-          <p>On-line algorithms for statistics.</p>
-          <br />
-          <img src="https://user-images.githubusercontent.com/8075494/57313750-3d890d80-70be-11e9-99c9-b3fe0de6ea81.png"
-            alt="statsok-img" className="white" width="100%" style={{ borderRadius: 10 }} />
-        </Card>
-      </Col>
     </Row>
   </Container>
 }
