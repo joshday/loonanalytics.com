@@ -6,7 +6,7 @@ export default function MyFooter() {
     <Footer
       copyrights=""
       links={<ul>
-        <li><a href="mailto:info@loonanalytics.com?Subject=Hello!">Send us an Email</a></li>
+        <li><a href="mailto:info@loonanalytics.com?Subject=Hello!">Send us an email</a></li>
       </ul>}
       className="black"
     >

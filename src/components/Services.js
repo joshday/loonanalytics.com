@@ -3,7 +3,7 @@ import { Row, Col, Card, Container } from 'react-materialize'
 
 const Service = props => {
   return <Col s={12} m={6}>
-  <Card className="medium rounded-corners z-depth-0" 
+  <Card className="medium rounded-corners z-depth-0 teal lighten-5" 
       style={{ border: "5px solid #80cbc4" }}>
     <h3 className="center">{props.title}</h3>
     <p>{props.text}</p>
@@ -27,7 +27,7 @@ export default function Services() {
         buttonText="What Can We Build for You?" />
 
       <Service title="Consulting"
-        text="We provide a variety of general consulting services: everything from code review to statistical analysis"
+        text="We provide a variety of general consulting services: everything from code review to statistical analysis."
         buttonText="How Can We Help?" />
 
 
