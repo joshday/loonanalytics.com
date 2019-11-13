@@ -29,6 +29,7 @@ export default function Products() {
 
       <Prod
         title="TrendSpot"
+        link="https://trendspot.io"
         img="https://user-images.githubusercontent.com/8075494/68772019-107e6000-05f7-11ea-9081-dbfc5639f0cb.png"
         imgStyle={{borderRadius: 10, border: "2px solid #2196f3"}}
         description="The simplest monitoring solution around." />
