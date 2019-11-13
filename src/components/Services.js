@@ -23,7 +23,7 @@ export default function Services() {
     <Row className="flex">
 
       <Service title="Software"
-        text = "We build custom analytical software.  Anything within the realm of machine learning forecasting, interactive dashboards, and optimization."
+        text = "We build custom analytical software.  Anything within the realm of machine learning, forecasting, interactive dashboards, and numerical optimization."
         buttonText="What Can We Build for You?" />
 
       <Service title="Consulting"

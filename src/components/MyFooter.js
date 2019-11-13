@@ -8,10 +8,10 @@ export default function MyFooter() {
       links={<ul>
         <li><a href="mailto:info@loonanalytics.com?Subject=Hello!">Send us an email</a></li>
       </ul>}
-      className="black"
+      className="grey darken-4"
     >
-      <h5>Loon Analytics, LLC</h5>
-      <p>We love building software.  What can we build for you?</p>
+      <h5>Loon Analytics</h5>
+      <p>We love building software of the scientific and technical variety.</p>
     </Footer>
   )
 }
