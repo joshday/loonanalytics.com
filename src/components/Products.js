@@ -56,6 +56,14 @@ export default function Products() {
         imgStyle={{backgroundColor: "white", borderRadius: 10}}
         description="On-line algorithms for statistics." />
 
+      <Prod 
+        title="HTML Color Helper"
+        link="https://htmlcolorhelper.com"
+        img="https://user-images.githubusercontent.com/8075494/69383224-10c9cb80-0c87-11ea-8a60-e049e742a7c6.png"
+        imgStyle={{borderRadius: 10}}
+        description="Easy-to-use tool that helps you design and compare three-color website palettes."
+      />
+
     </Row>
   </Container>
 }
