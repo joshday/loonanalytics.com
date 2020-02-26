@@ -24,7 +24,7 @@ export default function Services() {
 
       <Service title="Software"
         text = "We build custom analytical software.  Anything within the realm of machine learning, forecasting, interactive dashboards, and numerical optimization."
-        buttonText="What Can We Build for You?" />
+        buttonText="What Can We Build?" />
 
       <Service title="Consulting"
         text="We provide a variety of general consulting services: everything from code review to statistical analysis."
