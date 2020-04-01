@@ -23,7 +23,7 @@ export default function Home() {
     <Row>
       <h4 className="center">Reviews</h4>
       <Container className="center">
-        <Col s={6}>
+        <Col s={12} m={6}>
           <Card className="rounded-corners">
             <img src="https://user-images.githubusercontent.com/8075494/66781202-ab710680-eea0-11e9-910a-9e837f6e31d4.png" width="30%" alt="glc logo" className="grayscale center" style={{display: "block", marginBottom: 10, marginLeft: "auto", marginRight: "auto"}} />
             <blockquote>
