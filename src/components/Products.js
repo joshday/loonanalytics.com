@@ -59,7 +59,7 @@ export default function Products() {
       <Prod 
         title="HTML Color Helper"
         link="https://htmlcolorhelper.com"
-        img="https://user-images.githubusercontent.com/8075494/69383224-10c9cb80-0c87-11ea-8a60-e049e742a7c6.png"
+        img="https://user-images.githubusercontent.com/8075494/78169166-fc5cc300-741e-11ea-95e4-593b90070425.png"
         imgStyle={{borderRadius: 10}}
         description="Easy-to-use tool that helps you design and compare three-color website palettes."
       />
