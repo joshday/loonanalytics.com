@@ -11,7 +11,7 @@ export default function MyFooter() {
       className="grey darken-4"
     >
       <h5>Loon Analytics</h5>
-      <p>We love building software of the scientific and technical variety.</p>
+      <p>We are scientific software builders.</p>
     </Footer>
   )
 }

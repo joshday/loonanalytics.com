@@ -23,16 +23,9 @@ const Prod = props => {
 }
 
 //-----------------------------------------------------------------------------// Products
-export default function Products() {
+export default function Projects() {
   return <Container>
     <Row className="" style={{marginTop: 20}}>
-
-      <Prod
-        title="TrendSpot"
-        link="https://trendspot.io"
-        img="https://user-images.githubusercontent.com/8075494/68772019-107e6000-05f7-11ea-9081-dbfc5639f0cb.png"
-        imgStyle={{borderRadius: 10, border: "2px solid #2196f3"}}
-        description="The simplest monitoring solution around." />
 
       <Prod 
         title="One Click Tuner"

@@ -4,7 +4,7 @@ import MyNavBar from './components/MyNavBar'
 import MyFooter from './components/MyFooter'
 import ScrollToTop from './components/ScrollToTop'
 import Home from './components/Home'
-import Products from './components/Products'
+import Projects from './components/Projects'
 import Services from './components/Services'
 import NotFound from './components/NotFound'
 import Team from './components/Team'
@@ -25,7 +25,7 @@ class App extends Component {
               <Switch>
                 <Route exact path="/" component={Home} />
                 <Route path="/services" component={Services} />
-                <Route path="/products" component={Products} />
+                <Route path="/projects" component={Projects} />
                 <Route path="/team" component={Team} />
                 <Route path="/about" component={About} />
                 <Route path="*" component={NotFound} />

@@ -7,7 +7,10 @@ export default function Home() {
       <Container className="flex" style={{ minHeight: 300 }}>
         <Col s={12} m={6} className="valign-wrapper">
           <Card className="z-depth-0 valign-wrapper" style={{ height: 300 }}>
-            <h4>Solutions for analytics, optimization, data science, and machine learning</h4>
+            <h5>Data Visualization</h5>
+            <h5>Big Data Analytics</h5>
+            <h5>Numerical Optimization</h5>
+            <h5>Machine Learning</h5>
           </Card>
         </Col>
         <Col s={12} m={6}>
