@@ -1,23 +1,14 @@
 import React from 'react'
 import { Row, Col, Card, Container } from 'react-materialize'
 
+// title link oneLiner
 const Prod = props => {
   return <Col s={12} m={6}>
     <Card title={props.title} 
-        style={{border: "5px solid #2196f3"}}
-        className="large center blue lighten-4 rounded-corners z-depth-0">
-      <h4><a className="btn btn-large" target="_blank" rel="noopener noreferrer" href={props.link}>Link</a></h4>
-      {props.productHunt && <div>
-        <a href={props.productHunt} rel="noopener noreferrer" target="_blank">
-          <img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=163769&theme=light" height="100%" width="100"
-          alt={`Product Hunt Link: ${props.title}`} style={{ height: "100%", width: 200}} />
-        </a>
-        <br /><br />
-      </div>}
-      <p>{props.description}</p>
-      <br />
-      <img style={{ ...props.imgStyle, maxWidth: "100%", maxHeight: "100%" }} 
-        src={props.img} alt={`img: ${props.title}`}/>
+        className="large center blue lighten-5">
+      <h4><a className="btn btn-large blue" target="_blank" rel="noopener noreferrer" href={props.link}>Link</a></h4>
+      <p>{props.oneLiner}</p>
+      {props.children}
     </Card>
   </Col>
 }
@@ -27,35 +18,30 @@ export default function Projects() {
   return <Container>
     <Row className="" style={{marginTop: 20}}>
 
-      <Prod 
-        title="One Click Tuner"
-        link="https://oneclicktuner.com"
-        productHunt="https://www.producthunt.com/posts/one-click-tuner?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-one-click-tuner"
-        img="https://oneclicktuner.com/img/tuner.gif"
-        imgStyle={{borderRadius: 10, border: "1px solid white", height: 225 }}
-        description="Chromatic musical instrument tuner for iOS." />
-
-      <Prod 
-        title="StatsOK"
-        link="https://statsok.com"
-        description="Interactive modern statistics courses."
-        img="https://user-images.githubusercontent.com/8075494/64424484-388d9800-d077-11e9-8652-4ea94df820c9.png"
-        imgStyle={{borderRadius: 10}} />
+      <Prod title="One Click Tuner" link="https://oneclicktuner.com" 
+       oneLiner="Chromatic musical instrument tuner for iOS." 
+      >
+        <a href="https://www.producthunt.com/posts/one-click-tuner?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-one-click-tuner" target="_blank" rel="noopener noreferrer"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=153658&theme=light" alt="One Click Tuner - The best chromatic tuner for iOS | Product Hunt Embed" style={{width: 250, height: 54}} width="250px" height="54px" /></a>
+        <img src="https://user-images.githubusercontent.com/8075494/83570621-61eb2f80-a4f4-11ea-9def-62c9dd8f0d1c.png" alt="one click tuner logo" style={{height: 250}} className="rounded-corners"/>
+      </Prod>
 
       <Prod 
         title="OnlineStats.jl"
         link="https://github.com/joshday/OnlineStats.jl"
-        img="https://user-images.githubusercontent.com/8075494/57313750-3d890d80-70be-11e9-99c9-b3fe0de6ea81.png"
-        imgStyle={{backgroundColor: "white", borderRadius: 10}}
-        description="On-line algorithms for statistics." />
+        oneLiner="On-line algorithms for statistics on big data."
+      >
+        <img src="https://user-images.githubusercontent.com/8075494/57313750-3d890d80-70be-11e9-99c9-b3fe0de6ea81.png"     
+          alt="onlinestats logo" style={{height: "auto", width: "100%"}}/>
+      </Prod>
 
       <Prod 
         title="HTML Color Helper"
         link="https://htmlcolorhelper.com"
-        img="https://user-images.githubusercontent.com/8075494/78169166-fc5cc300-741e-11ea-95e4-593b90070425.png"
-        imgStyle={{borderRadius: 10}}
-        description="Easy-to-use tool that helps you design and compare three-color website palettes."
-      />
+        oneLiner="Easy-to-use tool that helps you design and compare three-color website palettes."
+      >
+        <img src="https://user-images.githubusercontent.com/8075494/78169166-fc5cc300-741e-11ea-95e4-593b90070425.png" 
+          alt="html color helper img" style={{height: "auto", width: "100%", borderRadius: 2}}/>
+      </Prod>
 
     </Row>
   </Container>

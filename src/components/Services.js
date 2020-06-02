@@ -1,10 +1,12 @@
 import React from 'react'
-import { Row, Col, Card, Container } from 'react-materialize'
+import { Row, Col, Card, Container, Icon } from 'react-materialize'
 
 const Service = props => {
   return <Col s={12} m={6}>
-  <Card className="medium rounded-corners z-depth-0 teal lighten-5" 
-      style={{ border: "5px solid #80cbc4" }}>
+  <Card className="medium teal lighten-5">
+    <div className="center">
+      <Icon large>{props.icon}</Icon>
+    </div>
     <h3 className="center">{props.title}</h3>
     <p>{props.text}</p>
     <br />
@@ -22,13 +24,17 @@ export default function Services() {
   return <Container style={{marginTop: 20}}>
     <Row className="flex">
 
-      <Service title="Software"
+      <Service title="Software" icon="build"
         text = "We build custom analytical software.  Anything within the realm of machine learning, forecasting, interactive dashboards, and numerical optimization."
-        buttonText="What Can We Build?" />
+        buttonText="Contact Us" />
 
-      <Service title="Consulting"
+      <Service title="Consulting" icon="business"
         text="We provide a variety of general consulting services: everything from code review to statistical analysis."
-        buttonText="How Can We Help?" />
+        buttonText="Contact Us" />
+
+      <Service title="Teaching" icon="school"
+        text="Our PhDs have wide-ranging expertise on various topics related to statistics, on-line algorithms, machine learning, and numerical optimization."
+        buttonText="Contact Us" />
 
 
       <Col s={12} m={6} style={{display: "none"}}>

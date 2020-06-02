@@ -4,19 +4,17 @@ import { Row, Col, Card, Container, Divider } from 'react-materialize'
 export default function Home() {
   return <div>
     <Row className="center">
-      <Container className="flex" style={{ minHeight: 300 }}>
+      <Container className="flex" style={{ minHeight: 300, marginTop: 15}}>
         <Col s={12} m={6} className="valign-wrapper">
-          <Card className="z-depth-0 valign-wrapper" style={{ height: 300 }}>
+          <Card className="valign-wrapper z-depth-0" style={{ height: 300, backgroundColor: "#FFFFFF00" }}>
             <h5>Data Visualization</h5>
             <h5>Big Data Analytics</h5>
             <h5>Numerical Optimization</h5>
             <h5>Machine Learning</h5>
           </Card>
         </Col>
-        <Col s={12} m={6}>
-          <Card className="z-depth-0 valign-wrapper" style={{ height: 300 }}>
-            <img className="hero-logo" src="/img/loonsquarecircle.png" alt="logo" />
-          </Card>
+        <Col s={12} m={6} className="valign-wrapper">
+          <img className="hero-logo" src="/img/loonsquarecircle.png" alt="logo" />
         </Col>
       </Container>
     </Row>
@@ -27,7 +25,7 @@ export default function Home() {
       <h4 className="center">Reviews</h4>
       <Container className="center">
         <Col s={12} m={6}>
-          <Card className="rounded-corners">
+          <Card className="white">
             <img src="https://user-images.githubusercontent.com/8075494/66781202-ab710680-eea0-11e9-910a-9e837f6e31d4.png" width="30%" alt="glc logo" className="grayscale center" style={{display: "block", marginBottom: 10, marginLeft: "auto", marginRight: "auto"}} />
             <blockquote>
               Josh has been a savior on our project, not just his in depth understanding of very recent and pertinent issues related to Julia and JuliaDB, but his ability to clearly articulate modern data science approached to solving real business questions.  This combination of technical and communication is rare.  Lastly, his productivity is unmatched with respect to consultants we have used.
