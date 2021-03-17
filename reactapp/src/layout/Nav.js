@@ -17,7 +17,6 @@ class Nav extends Component {
 
     const NavLink = ({cls, name, path}) => {
       const loc = this.props.location
-      console.log(loc)
       const currentClass = "bg-gray-900 text-white"
       const defaultClass = "text-gray-300 hover:bg-gray-700 hover:text-white"
       return <Link to={path} className={`${loc.pathname === path ? currentClass: defaultClass} ${cls}`}>{name}</Link>

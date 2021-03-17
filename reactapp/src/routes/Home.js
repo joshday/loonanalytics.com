@@ -25,7 +25,7 @@ export default function Home() {
                         <div className="sm:flex">
                           <div className="min-w-0 flex-1">
                             <label>
-                              <input id="email" type="email" name="_replyto" placeholder="Enter your email" className="block w-full px-4 py-3 rounded-md border-0 text-base text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-300 focus:ring-offset-gray-900" />
+                              <input id="email" type="email" name="home_emailAddress" placeholder="Enter your email" className="block w-full px-4 py-3 rounded-md border-0 text-base text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-300 focus:ring-offset-gray-900" />
                             </label>
                           </div>
                           <div className="mt-3 sm:mt-0 sm:ml-3">
