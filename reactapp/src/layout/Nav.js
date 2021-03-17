@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Link, Redirect, withRouter } from 'react-router-dom'
-import { Search } from 'heroicons-react'
+// import { Search } from 'heroicons-react'
 
 
 class Nav extends Component {
@@ -25,7 +25,7 @@ class Nav extends Component {
   
     const links = [
       { name: "Projects", path: "/projects" },
-      { name: "Company", path: "/company" },
+      { name: "About", path: "/about" },
       { name: "Newsletter", path: "/newsletter"}
     ]
   
@@ -52,7 +52,7 @@ class Nav extends Component {
                 </div>
               </div>
             </div>
-            <div className="flex-1 flex justify-center px-2 lg:ml-6 lg:justify-end">
+            {/* <div className="flex-1 flex justify-center px-2 lg:ml-6 lg:justify-end">
               <div className="max-w-lg w-full lg:max-w-xs">
                 <label htmlFor="search" className="sr-only">Search</label>
                 <div className="relative">
@@ -64,7 +64,7 @@ class Nav extends Component {
                   />
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
         {/* Mobile menu, show/hide based on menu state. */}

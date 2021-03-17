@@ -1,5 +1,6 @@
 import React from 'react'
 import Features from '../components/Features'
+import { Link } from 'react-router-dom'
 
 
 export default function Home() {
@@ -30,7 +31,7 @@ export default function Home() {
                             <button type="submit" className="block w-full py-3 px-4 rounded-md shadow bg-indigo-500 text-white font-medium hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-300 focus:ring-offset-gray-900">Subscribe</button>
                           </div>
                         </div>
-                        <p className="mt-3 text-sm text-gray-300 sm:mt-4">We won't spam you.</p>
+                        <p className="mt-3 text-sm text-gray-300 sm:mt-4">We won't spam you.  Read our <Link to="/privacy" className="text-indigo-400">privacy policy</Link>.</p>
                       </form>
                     </div>
                   </div>

@@ -43,7 +43,7 @@ export default function Features() {
 
             <Feature 
               title = "React Apps"
-              icon = {<img className="h-10 w-10 bg-white rounded-sm" src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" />}
+              icon = {<img className="h-10 w-10 bg-white rounded-sm" src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="react-logo"/>}
               desc = "We can build anything for the modern web."
             />
 

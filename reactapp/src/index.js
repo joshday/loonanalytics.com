@@ -7,22 +7,35 @@ import './index.css';
 // Layout
 import Nav from './layout/Nav'
 import Footer from './layout/Footer'
+import ScrollToTop from './layout/ScrollToTop'
 
 // routes
 import loadable from '@loadable/component'
 import Home from './routes/Home'
 const Search = loadable(() => import('./routes/Search'))
+const Projects = loadable(() => import('./routes/Projects'))
+const About = loadable(() => import('./routes/About'))
+const Terms = loadable(() => import('./routes/Terms'))
+const Privacy = loadable(() => import('./routes/Privacy'))
+const Contact = loadable(() => import('./routes/Contact'))
+const Newsletter = loadable(() => import('./routes/Newsletter'))
 
 //-----------------------------------------------------------------------------// render
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter onUpdate={() => window.scrollTo(0, 0)}>
-      
+      <ScrollToTop />
       <div className="App">
         <Nav />
 
         <Switch>
           <Route exact path="/" component={Home} />
+          <Route exact path="/about" component={About} />
+          <Route exact path="/projects" component={Projects} />
+          <Route exact path="/tos" component={Terms} />
+          <Route exact path="/privacy" component={Privacy} />
+          <Route exact path="/contact" component={Contact} />
+          <Route path="/newsletter" component={Newsletter} />
           <Route path="/search" component={Search} />
         </Switch>
 
