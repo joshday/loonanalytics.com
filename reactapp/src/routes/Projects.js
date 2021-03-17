@@ -34,7 +34,7 @@ export default function Projects() {
           Projects
         </h2>
         <p class="mt-3 max-w-2xl mx-auto text-xl text-gray-500 sm:mt-4">
-          These are not things we've worked on for customers, but side projects for fun and profit.
+          These are not things we've worked on for customers, but side projects for fun and/or profit.
         </p>
       </div>
 
