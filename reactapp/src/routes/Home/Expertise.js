@@ -1,5 +1,5 @@
 import React from 'react'
-import { ChartSquareBar, Code, Variable } from 'heroicons-react'
+import { ChartBar, Code, Variable } from 'heroicons-react'
 import Section from './Section'
 
 //-----------------------------------------------------------------------------// Feature 
@@ -35,7 +35,7 @@ export default function Expertise() {
 
             <Feature 
               title = "Data Viz" 
-              icon = {<ChartSquareBar className={iconClass} />} 
+              icon = {<ChartBar className={iconClass} />} 
               desc = "Custom interactive data visualizations tailored to your application."
             />
 
