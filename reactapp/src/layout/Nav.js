@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Link, Redirect, withRouter } from 'react-router-dom'
+import A from '../components/A'
 // import { Search } from 'heroicons-react'
 
 
@@ -17,21 +18,29 @@ class Nav extends Component {
 
     const NavLink = ({cls, name, path}) => {
       const loc = this.props.location
-      const currentClass = "bg-gray-900 text-white"
-      const defaultClass = "text-gray-300 hover:bg-gray-700 hover:text-white"
-      return <Link to={path} className={`${loc.pathname === path ? currentClass: defaultClass} ${cls}`}>{name}</Link>
+      const currentClass = "bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium"
+      const defaultClass = "text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+      if (path.startsWith("http")) {
+        return <A href={path} className={defaultClass + " hover:underline"}>{name}</A>
+      } else {
+        return <Link to={path} className={loc.pathname === path ? currentClass: defaultClass}>{name}</Link>
+      }
     }
   
     const links = [
       { name: "Projects", path: "/projects" },
       { name: "About", path: "/about" },
-      { name: "Newsletter", path: "/newsletter"}
+      { name: "Newsletter", path: "https://newsletter.loonanalytics.com"}
     ]
   
     const Logo = () => (
       <Link to="/">
+        
         <span className="sr-only">Loon Analytics</span>
-        <span className="text-indigo-100 text-xl font-bold">Loon Analytics</span>
+        <span className="text-indigo-400 text-2xl font-bold flex place-items-center">
+          <img className="h-10 mr-4" src="/small_logo.svg" alt="logo"/>
+          Loon Analytics
+        </span>
       </Link>
     )
 
@@ -46,7 +55,7 @@ class Nav extends Component {
               <div className="hidden lg:block lg:ml-6">
                 <div className="flex space-x-4">
                   {links.map(l => (
-                    <NavLink path={l.path} key={`nav_${l.name}`} cls="px-3 py-2 rounded-md text-sm font-medium" name={l.name} />
+                    <NavLink path={l.path} key={`nav_${l.name}`} name={l.name} />
                   ))}
                 </div>
               </div>

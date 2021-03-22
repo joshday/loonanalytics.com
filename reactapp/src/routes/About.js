@@ -1,5 +1,6 @@
 import React from 'react'
 import A from '../components/A'
+import { Link } from 'react-router-dom'
 
 export default function About() {
   return (
@@ -34,6 +35,7 @@ export default function About() {
       </div>
       <div className="relative px-4 sm:px-6 lg:px-8">
         <div className="text-lg max-w-prose mx-auto">
+          <img src="logo512.png" className="mx-auto pb-6 h-48" alt="logo"/>
           <h1>
             <span className="block text-base text-center text-indigo-600 font-semibold tracking-wide uppercase">About Us</span>
             <span className="mt-2 block text-3xl text-center leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">Loon Analytics</span>
@@ -44,7 +46,7 @@ export default function About() {
 
           <h2>A Word from the Owner</h2>
 
-          <p>Hi there, this is Josh.  I created <strong>Loon Analytics, LLC</strong> in 2019 as an entity to funnel consulting work into.  Loon currently operates in Carrboro, NC as a side business while I work full-time for <A className="text-indigo-400" href="https://juliacomputing.com">Julia Computing</A>.  I enjoy researching unsolved problems and making software tools to solve them.  You can take a look at my resume <A className="text-indigo-400" href="https://github.com/loonanalytics/Hosting/files/6158887/JoshDayResume.pdf">here</A>.</p>
+          <p>Hi there, this is Josh.  I created <strong>Loon Analytics, LLC</strong> in 2019 as an entity to funnel consulting work into.  Loon currently operates in Carrboro, NC as a side business while I work full-time for <A className="text-indigo-400" href="https://juliacomputing.com">Julia Computing</A>.  I enjoy researching unsolved problems and making software tools to solve them.  You can take a look at <Link className="text-indigo-400" to="/resume">my resume here</Link>.</p>
 
           <h3>Why "Loon"?</h3>
 
