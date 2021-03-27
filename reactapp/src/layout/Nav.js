@@ -30,7 +30,6 @@ class Nav extends Component {
     const links = [
       { name: "Projects", path: "/projects" },
       { name: "About", path: "/about" },
-      { name: "Newsletter", path: "https://newsletter.loonanalytics.com"}
     ]
   
     const Logo = () => (
