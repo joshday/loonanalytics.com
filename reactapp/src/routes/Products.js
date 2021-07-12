@@ -34,7 +34,7 @@ export default function Products() {
           Products
         </h2>
         <p className="mt-3 max-w-2xl mx-auto text-xl text-gray-500 sm:mt-4">
-          Here our a few products we've worked on.
+          Here are a few products we've worked on.
         </p>
       </div>
 
