@@ -3,7 +3,7 @@ import A from '../../components/A'
 
 const Logo = ({ src, alt, href, className}) => (
   <A href={href} className={`col-span-1 flex justify-center rounded-sm py-8 px-8 bg-gray-50 ${className}`}>
-    <img className="h-16 object-contain" src={src} alt={alt}/>
+    <img className="h-16 object-contain hover:border-indigo-500 hover:border-4 " src={src} alt={alt}/>
   </A>
 )
 

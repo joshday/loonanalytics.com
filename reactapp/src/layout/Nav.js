@@ -28,7 +28,7 @@ class Nav extends Component {
     }
   
     const links = [
-      { name: "Projects", path: "/projects" },
+      { name: "Products", path: "/products" },
       { name: "About", path: "/about" },
     ]
   
@@ -36,7 +36,7 @@ class Nav extends Component {
       <Link to="/">
         
         <span className="sr-only">Loon Analytics</span>
-        <span className="text-indigo-400 text-2xl font-bold flex place-items-center">
+        <span className="text-indigo-200 text-2xl font-bold flex place-items-center">
           <img className="h-10 mr-4" src="/small_logo.svg" alt="logo"/>
           Loon Analytics
         </span>

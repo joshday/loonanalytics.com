@@ -12,21 +12,15 @@ export default function Hero() {
                 <span className="block text-indigo-400">Data Viz</span>
               </h1>
               <p className="mt-3 text-base text-gray-300 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
-                Using the Best of Open Source, We Build:
+                We build prototype-to-production technical software using the best of open source.
               </p>
-              <ul className="list-disc pl-12 text-base text-gray-300 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
-                <li>Software</li>
-                <li>Dashboards</li>
-                <li>Prototypes</li>
-              </ul>
               <div className="mt-10 sm:mt-12">
                 <div className="sm:max-w-xl sm:mx-auto lg:mx-0">
-                  <a href="https://newsletter.loonanalytics.com/#/portal/signup" className="sm:flex">
+                  <a href="mailto:info@loonanalytics.com" className="sm:flex">
                     <div className="mt-3 sm:mt-0 sm:ml-3">
-                      <button className="block w-full py-3 px-4 rounded-md shadow bg-indigo-500 text-white font-medium hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-300 focus:ring-offset-gray-900">Sign Up for our Newsletter</button>
+                      <button className="block w-full py-3 px-4 rounded-md shadow bg-indigo-500 text-white font-medium hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-300 focus:ring-offset-gray-900">Contact Us!</button>
                     </div>
                   </a>
-                  <p className="mt-3 text-sm pl-12 text-gray-300 sm:mt-4">Spam-free!</p>
                 </div>
               </div>
             </div>

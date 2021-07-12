@@ -13,7 +13,7 @@ import ScrollToTop from './layout/ScrollToTop'
 import loadable from '@loadable/component'
 import Home from './routes/Home/Home'
 const Search = loadable(() => import('./routes/Search'))
-const Projects = loadable(() => import('./routes/Projects'))
+const Products = loadable(() => import('./routes/Products'))
 const About = loadable(() => import('./routes/About'))
 const Resume = loadable(() => import('./routes/Resume'))
 const Terms = loadable(() => import('./routes/Terms'))
@@ -32,7 +32,7 @@ ReactDOM.render(
           <Route exact path="/" component={Home} />
           <Route exact path="/about" component={About} />
           <Route exact path="/resume" component={Resume} />
-          <Route exact path="/projects" component={Projects} />
+          <Route exact path="/products" component={Products} />
           <Route exact path="/tos" component={Terms} />
           <Route exact path="/privacy" component={Privacy} />
           <Route exact path="/contact" component={Contact} />
