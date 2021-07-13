@@ -48,6 +48,20 @@ export default function Products() {
           img="https://oneclicktuner.com/img/Icon-1024.png"
         />
 
+        <Card title="Trendspot.io" 
+          chips={["Data Viz", "Market Analysis"]} 
+          href="https://trendspot.io"
+          desc="Web search-based market research."
+          img="https://user-images.githubusercontent.com/8075494/111532281-dcabd100-873b-11eb-9187-496d33eaaf4f.png"
+        />
+
+        <Card title="Julia for Data Science"
+          chips={["Newsletter", "Julia", "Learning"]}
+          href="https://juliafordatascience.com"
+          desc="Donation-supported newsletter for learning data science with Julia."
+          img="https://user-images.githubusercontent.com/8075494/125420650-192b0450-6700-4157-ab14-cd155fecfcea.png"
+        />
+
         <Card title="OnlineStats.jl" 
           chips={["Open Source", "Julia", "Statistics", "Big Data"]} 
           href="https://github.com/joshday/OnlineStats.jl"
@@ -55,12 +69,6 @@ export default function Products() {
           img="https://user-images.githubusercontent.com/8075494/57313750-3d890d80-70be-11e9-99c9-b3fe0de6ea81.png"
         />
 
-        <Card title="Trendspot.io" 
-          chips={["Data Viz", "Market Analysis"]} 
-          href="https://trendspot.io"
-          desc="Web search-based market research."
-          img="https://user-images.githubusercontent.com/8075494/111532281-dcabd100-873b-11eb-9187-496d33eaaf4f.png"
-        />
 
 
       </ul>
