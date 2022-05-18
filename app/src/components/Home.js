@@ -1,9 +1,12 @@
-/* This example requires Tailwind CSS v2.0+ */
+// import Contact from './Contact'
+import A from './A'
+import { MailIcon } from '@heroicons/react/outline'
+
 const stats = [
   { label: 'Founded', value: '2019' },
-  // { label: 'Employees', value: '5' },
-  // { label: 'Beta Users', value: '521' },
-  // { label: 'Raised', value: '$25M' },
+  { label: 'Number of Ideas', value: '∞' },
+  { label: 'Products Built', value: '3' },
+  { label: 'Products Profitable', value: '1' },
 ]
 
 export default function Example() {
@@ -46,26 +49,27 @@ export default function Example() {
               <div className="absolute inset-0 bg-indigo-500 mix-blend-multiply" />
               <div className="absolute inset-0 bg-gradient-to-t from-indigo-600 via-indigo-600 opacity-90" />
               <div className="relative px-8">
-                <div>
+                {/* <div>
                   <h2 className="text-gray-50 text-3xl">Loon Analytics, LLC</h2>
-                </div>
+                </div> */}
                 <blockquote className="mt-8">
                   <div className="relative text-lg font-medium text-white md:flex-grow">
-                    {/* <svg
+                    <svg
                       className="absolute top-0 left-0 transform -translate-x-3 -translate-y-2 h-8 w-8 text-indigo-400"
                       fill="currentColor"
                       viewBox="0 0 32 32"
                       aria-hidden="true"
                     >
                       <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z" />
-                    </svg> */}
+                    </svg>
                     <p className="relative">
-                      This company is an experiment in providing technical solutions to non-technical businesses.
+                      Loon Analytics is a venue for me to work on for-profit side projects.  I contribute to <A href="https://github.com/joshday">many open source packages</A>, but I often have ideas that make more sense as a product or service.
                     </p>
+                    <br />
                   </div>
 
                   <footer className="mt-4">
-                    <p className="text-base font-semibold text-indigo-200">Josh Day, Founder</p>
+                    <p className="text-base font-semibold text-indigo-200">Josh Day | Founder</p>
                   </footer>
                 </blockquote>
               </div>
@@ -83,9 +87,19 @@ export default function Example() {
               <p className="text-lg">
                 We build software for humans.
               </p>
-              <p className="text-base leading-7">
-                Contact us for more info.
+              <p className="text-lg">
+                The name "Loon" is a throwback to fond memories of spending time at my grandparents' cabin in northern Minnesota.  I mean, you gotta name your company something.
               </p>
+              <div className="mt-9">
+                <div className="mt-6 flex">
+                  <div className="flex-shrink-0">
+                    <MailIcon className="h-6 w-6 text-gray-400" aria-hidden="true" />
+                  </div>
+                  <div className="ml-3 text-base text-gray-500">
+                    <p>josh [at] loonanalytics [dot] com</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 

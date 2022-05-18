@@ -4,8 +4,9 @@ import Home from './components/Home'
 import About from './components/About'
 import Footer from './components/Footer'
 
+
 const routes = [
-  { name:'Home', href: '/', element: <Home /> },
+  { name: 'Home', href: '/', element: <Home /> },
 ]
 
 function App() {
