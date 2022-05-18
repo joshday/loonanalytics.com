@@ -1,10 +1,8 @@
 
 const products = [
-  { name: "One Click Tuner", description: "Chromatic musical instrument tuner for iOS", imageUrl: "images/oneclick.png" },
+  { name: "One Click Tuner", description: "Chromatic musical instrument tuner for iOS.  This is the (barely) profitable one.", imageUrl: "images/oneclick.png" },
   { name: "Trendspot.io", description: "Keyword research trend analysis", imageUrl: "images/trendspot.png" },
-  { name: "Julia For Data Science", description: "Newsletter with Julia tutorials", imageUrl: "https://pbs.twimg.com/profile_banners/1375122771320143875/1651760911/1500x500"},
   { name: "Monitoring App", description: "Lightweight statsd-like monitoring app (retired)" },
-  { name: "OnlineStats.jl", description: "Open source package for statistics on big data", imageUrl: "https://user-images.githubusercontent.com/8075494/57313750-3d890d80-70be-11e9-99c9-b3fe0de6ea81.png"}
 ]
 
 export default function Example() {
