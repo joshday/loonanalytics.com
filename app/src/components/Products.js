@@ -17,10 +17,7 @@ export default function Example() {
               quis et.
             </p> */}
           </div>
-          <ul
-            role="list"
-            className="space-y-12 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 lg:grid-cols-3 lg:gap-x-8"
-          >
+          <ul className="space-y-12 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 lg:grid-cols-3 lg:gap-x-8">
             {products.map((x) => (
               <li key={x.name}>
                 <div className="space-y-4">
