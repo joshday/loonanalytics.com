@@ -122,6 +122,7 @@ export default function Example() {
           </div>
         </div>
       </div>
+      <img src="images/LogoCircle.svg" className="h-32 mx-auto mb-6" />
     </div>
   )
 }
