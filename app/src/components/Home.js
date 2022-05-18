@@ -81,11 +81,11 @@ export default function Example() {
           {/* Content area */}
           <div className="pt-12 sm:pt-16 lg:pt-20">
             <h2 className="text-3xl text-gray-900 font-extrabold tracking-tight sm:text-4xl">
-              What we do
+              What I do
             </h2>
             <div className="mt-6 text-gray-500 space-y-6">
               <p className="text-lg">
-                We build software for humans.
+                I build software for humans.
               </p>
               <p className="text-lg">
                 The name "Loon" is a throwback to fond memories of spending time at my grandparents' cabin in northern Minnesota.  I mean, you gotta name your company something.
