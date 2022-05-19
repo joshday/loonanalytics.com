@@ -1,8 +1,27 @@
+import A from './A'
 
 const products = [
-  { name: "One Click Tuner", description: "Chromatic musical instrument tuner for iOS.  This is the (barely) profitable one.", imageUrl: "images/oneclick.png" },
-  { name: "Trendspot.io", description: "Keyword research trend analysis", imageUrl: "images/trendspot.png" },
-  { name: "Monitoring App", description: "Lightweight statsd-like monitoring app (retired)" },
+  {
+    name: "One Click Tuner",
+    description: "Chromatic musical instrument tuner for iOS.  This is the (barely) profitable one.",
+    imageUrl: "images/oneclick.png",
+    productHunt: {
+      href: "https://www.producthunt.com/posts/one-click-tuner?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-one&#0045;click&#0045;tuner",
+      src: "https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=153658&theme=light",
+      alt: "One&#0032;Click&#0032;Tuner - The&#0032;best&#0032;chromatic&#0032;tuner&#0032;for&#0032;iOS | Product Hunt"
+    },
+    appStoreLink: "https://apps.apple.com/us/app/one-click-tuner/id1448329781"
+  },
+  {
+    name: "Trendspot.io",
+    description: "Keyword research trend analysis",
+    imageUrl: "images/trendspot.png",
+  },
+  {
+    name: "Monitoring App",
+    description: "Lightweight statsd-like monitoring app (retired)",
+    imageUrl: "https://user-images.githubusercontent.com/8075494/62552461-b1f95700-b83b-11e9-9ff1-9dc2b8c587a8.png",
+  }
 ]
 
 export default function Example() {
@@ -26,9 +45,23 @@ export default function Example() {
                   </div>
 
                   <div className="space-y-2">
-                    <div className="text-lg leading-6 font-medium space-y-1">
+                    <div className="text-lg leading-6 font-medium space-y-4">
                       <h3>{x.name}</h3>
                       <p className="text-indigo-600">{x.description}</p>
+                      {x.productHunt && (
+                        <div>
+                          <A href={x.productHunt.href} className="w-250 h-54"target="_blank">
+                            <img src={x.productHunt.src} alt={x.productHunt.alt} />
+                          </A>
+                        </div>
+                      )}
+                      {x.appStoreLink && (
+                        <div>
+                          <A href={x.appStoreLink}>
+                            <img src="images/download-on-the-app-store.svg" alt="app store link"/>
+                          </A>
+                        </div>
+                      )}
                     </div>
                   </div>
                 </div>

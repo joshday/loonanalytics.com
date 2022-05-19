@@ -17,7 +17,7 @@ export default function Nav({routes}) {
   })
 
   return (
-    <Disclosure as="nav" className="bg-indigo-800">
+    <Disclosure as="nav" className="bg-indigo-900">
       {({ open }) => (
         <>
           <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
@@ -35,7 +35,7 @@ export default function Nav({routes}) {
               </div>
               <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="flex-shrink-0 flex items-center">
-                  <h1 className="align-middle text-2xl text-indigo-50 font-bold">Loon Analytics</h1>
+                  <Link to='/' className="align-middle text-2xl text-indigo-100 font-bold">Loon Analytics</Link>
                 </div>
                 <div className="hidden sm:block sm:ml-6">
                   <div className="flex space-x-4">
@@ -44,7 +44,7 @@ export default function Nav({routes}) {
                         key={item.name}
                         to={item.href}
                         className={classNames(
-                          item.current ? 'bg-indigo-900 text-white' : 'text-indigo-300 hover:bg-indigo-700 hover:text-white',
+                          item.current ? 'bg-indigo-900 text-indigo-100' : 'text-indigo-200 hover:bg-indigo-800 hover:text-white',
                           'px-3 py-2 rounded-md text-sm font-medium'
                         )}
                         aria-current={item.current ? 'page' : undefined}
@@ -64,7 +64,7 @@ export default function Nav({routes}) {
               {navigation.map((item) => (
                 <Disclosure.Button
                   key={item.name}
-                  as="Link"
+                  as={Link}
                   to={item.href}
                   className={classNames(
                     item.current ? 'bg-indigo-900 text-white' : 'text-indigo-300 hover:bg-indigo-700 hover:text-white',
