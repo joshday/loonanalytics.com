@@ -17,14 +17,14 @@ export default function Nav({routes}) {
   })
 
   return (
-    <Disclosure as="nav" className="bg-indigo-900">
+    <Disclosure as="nav" className="bg-slate-900">
       {({ open }) => (
         <>
           <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
             <div className="relative flex items-center justify-between h-16">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 {/* Mobile menu button*/}
-                <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-indigo-400 hover:text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-slate-400 hover:text-white hover:bg-slate-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                   <span className="sr-only">Open main menu</span>
                   {open ? (
                     <XIcon className="block h-6 w-6" aria-hidden="true" />
@@ -35,7 +35,7 @@ export default function Nav({routes}) {
               </div>
               <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="flex-shrink-0 flex items-center">
-                  <Link to='/' className="align-middle text-2xl text-indigo-100 font-bold">Loon Analytics</Link>
+                  <Link to='/' className="align-middle text-2xl text-slate-100 font-bold">Loon Analytics</Link>
                 </div>
                 <div className="hidden sm:block sm:ml-6">
                   <div className="flex space-x-4">
@@ -44,7 +44,7 @@ export default function Nav({routes}) {
                         key={item.name}
                         to={item.href}
                         className={classNames(
-                          item.current ? 'bg-indigo-900 text-indigo-100' : 'text-indigo-200 hover:bg-indigo-800 hover:text-white',
+                          item.current ? 'bg-slate-900 text-slate-100' : 'text-slate-200 hover:bg-slate-800 hover:text-white',
                           'px-3 py-2 rounded-md text-sm font-medium'
                         )}
                         aria-current={item.current ? 'page' : undefined}
@@ -67,7 +67,7 @@ export default function Nav({routes}) {
                   as={Link}
                   to={item.href}
                   className={classNames(
-                    item.current ? 'bg-indigo-900 text-white' : 'text-indigo-300 hover:bg-indigo-700 hover:text-white',
+                    item.current ? 'bg-slate-900 text-white' : 'text-slate-300 hover:bg-slate-700 hover:text-white',
                     'block px-3 py-2 rounded-md text-base font-medium'
                   )}
                   aria-current={item.current ? 'page' : undefined}

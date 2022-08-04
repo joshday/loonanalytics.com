@@ -46,8 +46,8 @@ export default function Example() {
                 src="https://images.unsplash.com/photo-1545987796-200677ee1011?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80"
                 alt=""
               />
-              <div className="absolute inset-0 bg-indigo-500 mix-blend-multiply" />
-              <div className="absolute inset-0 bg-gradient-to-t from-indigo-600 via-indigo-600 opacity-90" />
+              <div className="absolute inset-0 bg-slate-500 mix-blend-multiply" />
+              <div className="absolute inset-0 bg-gradient-to-t from-slate-600 via-slate-600 opacity-90" />
               <div className="relative px-8">
                 {/* <div>
                   <h2 className="text-gray-50 text-3xl">Loon Analytics, LLC</h2>
@@ -55,7 +55,7 @@ export default function Example() {
                 <blockquote className="mt-8">
                   <div className="relative text-lg text-white md:flex-grow">
                     <svg
-                      className="absolute top-0 left-0 transform -translate-x-3 -translate-y-2 h-8 w-8 text-indigo-400"
+                      className="absolute top-0 left-0 transform -translate-x-3 -translate-y-2 h-8 w-8 text-slate-400"
                       fill="currentColor"
                       viewBox="0 0 32 32"
                       aria-hidden="true"
@@ -69,7 +69,7 @@ export default function Example() {
                   </div>
 
                   <footer className="mt-4">
-                    <p className="text-base font-semibold text-indigo-200">Josh Day | Founder</p>
+                    <p className="text-base font-semibold text-slate-200">Josh Day | Founder</p>
                   </footer>
                 </blockquote>
               </div>
@@ -80,15 +80,15 @@ export default function Example() {
         <div className="relative mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-0">
           {/* Content area */}
           <div className="pt-12 sm:pt-16 lg:pt-20">
-            <h2 className="text-3xl text-gray-900 font-extrabold tracking-tight sm:text-4xl">
-              What I do
+            <h2 className="text-3xl text-indigo-900 font-extrabold tracking-tight sm:text-4xl">
+              Who I am
             </h2>
             <div className="mt-6 text-gray-500 space-y-6">
               <p className="text-lg">
-                I build software for humans.
+                My name is Josh Day and Loon Analytics is an entity for me to run side businesses out of.  I love my job at Julia Computing, but I use side projects to scratch the itch for entrepreneurship.  The name <A href="https://en.wikipedia.org/wiki/Loon">Loon</A> comes from an aquatic bird that I have fond memories of while spending time at my grandfather's cabin in northern Minnesota.  They have a very distinct call that is one of the most relaxing sounds in the world.
               </p>
               <p className="text-lg">
-                The name "Loon" is a throwback to fond memories of spending time at my grandparents' cabin in northern Minnesota.  I mean, you gotta name your company something.
+
               </p>
               <div className="mt-9">
                 <div className="mt-6 flex">
@@ -114,7 +114,7 @@ export default function Example() {
               ))}
             </dl>
             <div className="mt-10">
-              {/* <a href="#" className="text-base font-medium text-indigo-600">
+              {/* <a href="#" className="text-base font-medium text-slate-600">
                 {' '}
                 Learn more about how we're changing the world <span aria-hidden="true">&rarr;</span>{' '}
               </a> */}
