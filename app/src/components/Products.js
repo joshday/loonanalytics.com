@@ -14,12 +14,14 @@ const products = [
   },
   {
     name: "Trendspot.io",
+    retired: true,
     description: "Keyword research trend analysis",
     imageUrl: "images/trendspot.png",
   },
   {
     name: "Monitoring App",
-    description: "Lightweight statsd-like monitoring app (retired)",
+    retired: true,
+    description: "Lightweight statsd-like monitoring app",
     imageUrl: "https://user-images.githubusercontent.com/8075494/62552461-b1f95700-b83b-11e9-9ff1-9dc2b8c587a8.png",
   }
 ]
@@ -46,7 +48,7 @@ export default function Example() {
 
                   <div className="space-y-2">
                     <div className="text-lg leading-6 font-medium space-y-4">
-                      <h3>{x.name}</h3>
+                      <h3>{x.name} {x.retired ? <span className="text-gray-500">(Retired)</span>: null}</h3>
                       <p className="text-indigo-600">{x.description}</p>
                       {x.productHunt && (
                         <div>
